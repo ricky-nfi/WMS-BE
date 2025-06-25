@@ -63,7 +63,7 @@ router.get('/inventory', async (req, res) => {
     res.json(filteredItems);
   } catch (error) {
     console.error('Error fetching inventory:', error);
-    res.status(500).json({ error: 'Failed to fetch inventory items' });
+    res.status(500).json({ error: 'Failed fetching inventory items' });
   }
 });
 
@@ -97,7 +97,7 @@ router.get('/inventory/:id', async (req, res) => {
     res.json(item);
   } catch (error) {
     console.error('Error fetching inventory item:', error);
-    res.status(500).json({ error: 'Failed to fetch inventory item' });
+    res.status(500).json({ error: 'Failed fetching inventory item' });
   }
 });
 
@@ -226,7 +226,7 @@ router.get('/inventory/stats', async (req, res) => {
     });
   } catch (error) {
     console.error('Error fetching inventory stats:', error);
-    res.status(500).json({ error: 'Failed to fetch inventory statistics' });
+    res.status(500).json({ error: 'Failed fetching inventory statistics' });
   }
 });
 
