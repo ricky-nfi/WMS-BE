@@ -4,7 +4,7 @@
   "description": "Backend API for Warehouse Management System with Prisma",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "echo 'Vercel will handle this'",
     "dev": "nodemon server.js",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
